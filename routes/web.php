@@ -37,12 +37,9 @@ Route::middleware('auth')->group(function () {
 });
 
 
-/**
-@TODO create the view for account. Allow to add/update a balance
-**/
+//Route::get('/account', [AccountController::class, 'show']);
 Route::get('/account', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
+    return Inertia::render('Account');
+});
 
 require __DIR__.'/auth.php';
