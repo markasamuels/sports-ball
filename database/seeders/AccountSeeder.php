@@ -12,9 +12,6 @@ class AccountSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('account')->insert([
-            'user_id' => 1,
-            'balance' => 10,
-        ]);	
+		//
     }
 }
